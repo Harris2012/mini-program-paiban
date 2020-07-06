@@ -1,0 +1,53 @@
+.calendar {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.c_week, .c_day {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.day {
+  width: 14.28%;
+  height: 40px;
+  text-align: center;
+  line-height: 50px;
+  float: left;
+  clear: right;
+}
+
+.day.work {
+  background-color: #e6e6fa;
+}
+
+.day.relax {
+  background-color: #f0f8ff;
+}
+
+.day.today {
+  color: #4169e1;
+  font-weight: bold;
+}
+
+.selection {
+  clear: left;
+}
+
+.pager {
+  display: block;
+  clear: left;
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.pager .page {
+  width: 50%;
+  text-align: center;
+  float: left;
+  clear: right;
+  cursor: pointer;
+}

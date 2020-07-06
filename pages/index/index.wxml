@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <span class="year_month">{{current_year}} 年 {{current_month + 1}} 月</span>
+  <view class="calendar">
+    <ul class="c_week">
+      <li class="day"><span>日</span></li>
+      <li class="day"><span>一</span></li>
+      <li class="day"><span>二</span></li>
+      <li class="day"><span>三</span></li>
+      <li class="day"><span>四</span></li>
+      <li class="day"><span>五</span></li>
+      <li class="day"><span>六</span></li>
+    </ul>
+    <ul class="c_day">
+      <li class="day {{item.relax}} {{item.work}} {{item.today}}" wx:for="{{days}}">
+        <span>{{item.title}}</span>
+      </li>
+    </ul>
+    <div class="pager">
+      <a class="page" bindtap="previous">上个月</a>
+      <a class="page" bindtap="next">下个月</a>
+    </div>
+  </view>
+</view>
